@@ -11,6 +11,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -28,3 +29,21 @@
                 </div>
             </div>
         </nav>
+
+    <?php
+    global $base_url;
+    $base_url = 'http://localhost/learning/';
+    
+    global $api_url;
+    $api_url = 'http://localhost/api_learning/index.php/';
+    //$api_url = 'http://nextexpertsacademymodules.great-site.net/api_learning/index.php/';
+
+    session_start();
+
+    $_SESSION["user"] = "1";
+
+    //$_SESSION["admin"] = "1";
+
+    //include ('store_session.php');
+
+    ?>
